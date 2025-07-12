@@ -8,13 +8,16 @@ main{
  color: #000000;
  font-family: arial;
 }
-#homeButton{
- color: #ffffff;
-}
-button{
+.homeButton{
  background-color: #1C46B3;
  color: #ffffff;
- font-size: 25px;
+ font-size: 15px;
+ font-family: arial;
+}
+button{
+ background-color: #ffffff;
+ color: #000000;
+ font-size: 20px;
  font-family: arial;
  border-radius: 15px;
 }
