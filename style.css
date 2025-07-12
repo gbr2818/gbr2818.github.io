@@ -1,17 +1,16 @@
-body{
- background-color: #9fd4e6;
-}
-h1{
- color: black;
+header{
+ background-color: #1C46B3;
+ color: #ffffff;
  font-family: arial;
 }
-p{
- color: black;
+main{
+ background-color: #ffffff;
+ color: #000000;
  font-family: arial;
 }
 button{
- background-color: #9fd4e6;
- color: black;
+ background-color: #1C46B3;
+ color: #ffffff;
  font-size: 25px;
  font-family: arial;
  border-radius: 15px;
