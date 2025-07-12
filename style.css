@@ -8,6 +8,9 @@ main{
  color: #000000;
  font-family: arial;
 }
+#homeButton{
+ color: #ffffff;
+}
 button{
  background-color: #1C46B3;
  color: #ffffff;
