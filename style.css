@@ -9,3 +9,10 @@ p{
  color: black;
  font-family: arial;
 }
+button{
+ background-color: #9fd4e6;
+ color: black;
+ font-size: 25px;
+ font-family: arial;
+ border-radius: 15px;
+}
