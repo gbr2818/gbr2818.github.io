@@ -3,12 +3,14 @@ header{
  color: white;
  font-family: arial;
  border-bottom: black;
+ position: sticky;
 }
 .navbar{
  background-color: #1C46B3;
  color: white;
  font-size: 15px;
  font-family: arial;
+ border: none;
 }
 main{
  background-color: white;
@@ -21,6 +23,7 @@ main{
  font-size: 20px;
  font-family: arial;
  border-radius: 15px;
+ margin: 0px;
 }
 .kiwiImg{
  width: 200px;
