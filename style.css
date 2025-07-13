@@ -17,6 +17,10 @@ main{
  color: black;
  font-family: arial;
 }
+main pre{
+ font-family: arial;
+ margin: 0px;
+}
 .mainButton{
  background-color: white;
  color: black;
