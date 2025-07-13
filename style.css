@@ -16,10 +16,8 @@ main{
  background-color: white;
  color: black;
  font-family: arial;
-}
-main pre{
- font-family: arial;
  margin: 0px;
+ width: 100vw;
 }
 .mainButton{
  background-color: white;
