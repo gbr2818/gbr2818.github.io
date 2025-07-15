@@ -1,16 +1,25 @@
 header{
+ display: flex;
  background-color: #1C46B3;
  color: white;
  font-family: arial;
  border-bottom: black;
+ justify-content: space-between;
+ align-items: center;
+ padding: 15px;
+}
+nav{
  position: sticky;
 }
-.navbar{
- background-color: #1C46B3;
+nav li a{
  color: white;
- font-size: 15px;
  font-family: arial;
- border: none;
+ text-decoration: none;
+}
+nav li{
+ list-style: none;
+ display: inline-block;
+ padding: 0px 10px;
 }
 main{
  background-color: white;
