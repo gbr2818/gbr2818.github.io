@@ -3,6 +3,7 @@
  color: white;
  font-family: arial;
  text-align: center;
+ margin: 0px;
 }
 nav{
 }
@@ -30,4 +31,12 @@ main{
  color: black;
  font-family: arial;
  margin: 0px;
+}
+#404Img{
+ width: 200px;
+ height: 254px;
+ margin: 25px;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
 }
