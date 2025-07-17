@@ -1,11 +1,10 @@
-header h1{
+.logo{
  background-color: #1C46B3;
  color: white;
  font-family: arial;
  text-align: center;
 }
 nav{
- position: sticky;
 }
 nav ul{
  background-color: #1C46B3;
@@ -13,6 +12,7 @@ nav ul{
  padding: 0px;
  margin: 0px;
  overflow: hidden;
+ position: sticky;
 }
 nav li{
  float: left;
@@ -30,8 +30,4 @@ main{
  color: black;
  font-family: arial;
  margin: 0px;
-}
-.kiwiImg{
- width: 200px;
- height: 254px;
 }
