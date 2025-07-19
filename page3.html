@@ -7,24 +7,30 @@
   <link rel="stylesheet" href="style.css">
  </head>
  <body>
-  <header>
-   <h1 class="logo">Test Website</h1>
-   <nav>
-    <ul>
-     <li><a href="index.html">Home</a></li>
-     <li><a href="page2.html">Page 2</a></li>
-     <li><a href="page3.html">Page 3</a></li>
-    </ul>
-   </nav>
-  </header>
-  <main>
-   <h3>This is page 3</h3>
-   <p>There isn't much to do here</p>
-   <p>You can press Home to go back or stay stuck here, it's your choice</p>
-   <p>Well if you're staying, here's a picture of my dog, Kiwi, I guess
-   <hr>
-   <img src="images/kiwi.png" alt="Kiwi" style="width: 200px; height: 254px"/>
-   <hr>
-  </main>
+  <!--Navigation bar start-->
+  <nav>
+   <input type="checkbox" id="menu-btn">
+   <label for="menu-btn" id="open-menu">
+    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+   </label>
+   <label for="menu-btn" id="content-overlay">
+   </label>
+   <div id="menu">
+    <label for="menu-btn" id="close-menu">
+     <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+    </label>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+   </div>
+  </nav>
+  <!--Navigation bar end-->
+  <h3>This is page 3</h3>
+  <p>There isn't much to do here</p>
+  <p>This page will be used for small testing and debugging; it's nothing interesting</p>
+  <p>You can go Home or stay here, it's your choice</p>
+  <p>Well if you're staying, here's a picture of my dog, Kiwi, I guess
+  <hr>
+  <img src="images/kiwi.png" alt="Kiwi" style="width: 200px; height: 254px"/>
  </body>
 </html>

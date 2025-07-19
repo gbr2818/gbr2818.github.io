@@ -1,36 +1,76 @@
-.logo{
- background-color: #1C46B3;
- color: white;
- font-family: arial;
- text-align: center;
- margin: 0px;
+@media (prefers-color-scheme: dark) {
+ :root{
+  --bg-main: hsl(0 0% 10%);
+  --bg-other: hsl(0 0% 15%);
+  --text-main: hsl(0 0% 95%);
+ }
+}
+@media (prefers-color-scheme: light) {
+ :root{
+  --bg-main: hsl(0 0% 95%);
+  --bg-other: hsl(0 0% 90%);
+  --text-main: hsl(0 0% 0%);
+ }
 }
 nav{
-}
-nav ul{
- background-color: #1C46B3;
- list-style: none;
- padding: 0px;
- margin: 0px;
- overflow: hidden;
+ background-color: hsl(from var(--bg-other) h s l);
+ border-bottom: solid 1px hsl(from var(--text-main) h s l);
+ height: 50px;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
  position: sticky;
+ top: 0px;
 }
-nav li{
- float: left;
+#menu{
+ background-color: hsl(from var(--bg-other) h s l);
+ height: 100%;
+ width: 200px;
+ display: flex;
+ align-items: flex-end;
+ flex-direction: column;
+ position: fixed;
+ top: 0px;
+ right: -200px;
+ z-index: 100;
+ transition: 0.2s ease-out;
 }
 nav a{
- color: white;
+ color: hsl(from var(--text-main) h s l);
  font-family: arial;
  text-decoration: none;
- padding: 15px;
- display: block;
- text-align: center;
+ display: flex;
+ box-sizing: border-box;
+ width: 100%;
+ height: auto;
+ padding: 15px 20px;
 }
-main{
- background-color: white;
- color: black;
+#menu-btn{
+ display: none;
+}
+#open-menu, #close-menu{
+ padding: 10px 15px;
+ display: block;
+}
+svg{
+ fill: hsl(from var(--text-main) h s l);
+}
+#menu-btn:checked ~ #menu{
+ right: 0px;
+}
+#menu-btn:checked ~ #content-overlay{
+ background-color: hsl(0 0% 10% / 0.5);
+ height: 100vh;
+ width: 100vw;
+ position: fixed;
+ z-index: 99;
+}
+body{
+ background-color: hsl(from var(--bg-main) h s l);
+ color: hsl(from var(--text-main) h s l);
  font-family: arial;
  margin: 0px;
+ z-index: 0;
 }
 #404Img{
  width: 200px;
