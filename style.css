@@ -1,20 +1,20 @@
 @media (prefers-color-scheme: dark) {
  :root{
-  --bg-main: hsl(0 0% 10%);
-  --bg-other: hsl(0 0% 15%);
-  --text-main: hsl(0 0% 95%);
+  --bg-main: #1A1A1A;
+  --bg-other: #262626;
+  --text-main: #F2F2F2;
  }
 }
 @media (prefers-color-scheme: light) {
  :root{
-  --bg-main: hsl(0 0% 95%);
-  --bg-other: hsl(0 0% 90%);
-  --text-main: hsl(0 0% 0%);
+  --bg-main: #F2F2F2;
+  --bg-other: #E6E6E6;
+  --text-main: #000000;
  }
 }
 nav{
- background-color: hsl(from var(--bg-other) h s l);
- border-bottom: solid 1px hsl(from var(--text-main) h s l);
+ background-color: var(--bg-other);
+ border-bottom: solid 1px var(--text-main);
  height: 50px;
  display: flex;
  justify-content: flex-end;
@@ -23,7 +23,7 @@ nav{
  top: 0px;
 }
 #menu{
- background-color: hsl(from var(--bg-other) h s l);
+ background-color: var(--bg-other);
  height: 100%;
  width: 200px;
  display: flex;
@@ -36,7 +36,7 @@ nav{
  transition: 0.2s ease-out;
 }
 nav a{
- color: hsl(from var(--text-main) h s l);
+ color: var(--text-main);
  font-family: arial;
  text-decoration: none;
  display: flex;
@@ -53,21 +53,21 @@ nav a{
  display: block;
 }
 svg{
- fill: hsl(from var(--text-main) h s l);
+ fill: var(--text-main);
 }
 #menu-btn:checked ~ #menu{
  right: 0px;
 }
 #menu-btn:checked ~ #content-overlay{
- background-color: hsl(0 0% 10% / 0.5);
+ background-color: rgb(26 26 26 / 50%);
  height: 100vh;
  width: 100vw;
  position: fixed;
  z-index: 99;
 }
 body{
- background-color: hsl(from var(--bg-main) h s l);
- color: hsl(from var(--text-main) h s l);
+ background-color: var(--bg-main);
+ color: var(--text-main);
  font-family: arial;
  margin: 0px;
  z-index: 0;
