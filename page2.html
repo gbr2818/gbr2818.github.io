@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en_US">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My website for testing</title>
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <script src="scripts/main.js" defer></script>
+ </head>
+ <body>
+  <!--Navigation bar start-->
+  <nav>
+   <a id="open-menu" onclick="openMenu()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+   </a>
+   <div id="content-overlay" style="display: none">
+   </div>
+   <div id="menu" style="top: 0px; left: -200px">
+    <a id="close-menu" onclick="closeMenu()">
+     <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+    </a>
+    <a class="links" href="index.html">Home</a>
+    <a class="links" href="page2.html">Page 2</a>
+    <a class="links" href="page3.html">Page 3</a>
+    <a class="links" href="canvas.html">Canvas</a>
+    <a class="links" href="https://github.com/gbr2818/gbr2818.github.io">My Githib</a>
+   </div>
+  </nav>
+  <!--Navigation bar end-->
+  <h2>Page 2</h2>
+  <p>This is Page 2 of my website</p>
+  <p>I will insert some text below for testing purposes. Feel free to scroll through it.</p>
+  <div id="lyrics-container">
+   <pre id="lyrics">We're no strangers to love
+You know the rules and so do I
+A full commitment's what I'm thinkin' of
+You wouldn't get this from any other guy
+
+I just wanna tell you how I'm feeling
+Gotta make you understand
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+We've known each other for so long
+Your heart's been aching, but you're too shy to say it
+Inside, we both know what's been going on
+We know the game and we're gonna play it
+
+And if you ask me how I'm feeling
+Don't tell me you're too blind to see
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+We've known each other for so long
+Your heart's been aching, but you're too shy to say it
+Inside, we both know what's been going on
+We know the game and we're gonna play it
+
+I just wanna tell you how I'm feeling
+Gotta make you understand
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you</pre>
+  </div>
+  <p>Wanna go to Page 3?</p>
+  <a href="page3.html">Go to page 3</a>
+  <style>
+   #lyrics-container{
+    background-color: hsl(from var(--bg-other) h s l);
+    margin: 0 10px;
+    padding: 5px 15px;
+    display: inline-flex;
+    max-width: fit-content;
+    width: auto;
+    border-radius: 15px;
+    border: none;
+   }
+   #lyrics{
+    font-family: arial;
+    font-size: 1rem;
+    width: 100%;
+    text-wrap: wrap;
+   }
+  </style>
+ </body>
+</html>
